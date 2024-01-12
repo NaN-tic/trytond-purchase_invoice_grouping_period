@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:party.party,purchase_invoice_grouping_period:"
+msgid "Purchase Invoice Grouping Period"
+msgstr "Període d'agrupació de factures de compra"
+
+msgctxt ""
+"field:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Purchase Invoice Grouping Period"
+msgstr "Període d'agrupació de factures de compra"
+
+msgctxt "field:purchase.line,invoice_date:"
+msgid "Invoice Date"
+msgstr "Data de la factura"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Biweekly"
+msgstr "Quinzenalment"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Daily"
+msgstr "Diàriament"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Every Ten Days"
+msgstr "Cada deu dies"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Monthly"
+msgstr "Mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Standard"
+msgstr "Estàndard"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Friday"
+msgstr "Setmanal - divendres"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Friday - monthly close"
+msgstr "Setmanal - divendres - tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Monday"
+msgstr "Setmanal - dilluns"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Monday - monthly close"
+msgstr "Setmanal - dilluns - tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Saturday"
+msgstr "Setmanal - Dissabte"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Saturday - monthly close"
+msgstr "Setmanal - Dissabte - Tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Sunday"
+msgstr "Setmanal - Diumenge"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Sunday - monthly close"
+msgstr "Setmanal - Diumenge - Tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Thursday"
+msgstr "Setmanal - dijous"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Thursday - monthly close"
+msgstr "Setmanal - dijous - tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Tuesday"
+msgstr "Setmanal - Dimarts"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Tuesday - monthly close"
+msgstr "Setmanal - Dimarts - Tancament mensual"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Wednesday"
+msgstr "Setmanal - Dimecres"
+
+msgctxt "selection:party.party,purchase_invoice_grouping_period:"
+msgid "Weekly - Wednesday - monthly close"
+msgstr "Setmanal - dimecres - tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Biweekly"
+msgstr "Quinzenalment"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Daily"
+msgstr "Diàriament"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Every Ten Days"
+msgstr "Cada deu dies"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Monthly"
+msgstr "Mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Standard"
+msgstr "Estàndard"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Friday"
+msgstr "Setmanal - divendres"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Friday - monthly close"
+msgstr "Setmanal - divendres - tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Monday"
+msgstr "Setmanal - dilluns"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Monday - monthly close"
+msgstr "Setmanal - dilluns - tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Saturday"
+msgstr "Setmanal - Dissabte"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Saturday - monthly close"
+msgstr "Setmanal - Dissabte - Tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Sunday"
+msgstr "Setmanal - Diumenge"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Sunday - monthly close"
+msgstr "Setmanal - Diumenge - Tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Thursday"
+msgstr "Setmanal - dijous"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Thursday - monthly close"
+msgstr "Setmanal - dijous - tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Tuesday"
+msgstr "Setmanal - Dimarts"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Tuesday - monthly close"
+msgstr "Setmanal - Dimarts - Tancament mensual"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Wednesday"
+msgstr "Setmanal - Dimecres"
+
+msgctxt ""
+"selection:party.party.purchase_invoice_grouping_method,purchase_invoice_grouping_period:"
+msgid "Weekly - Wednesday - monthly close"
+msgstr "Setmanal - dimecres - tancament mensual"
