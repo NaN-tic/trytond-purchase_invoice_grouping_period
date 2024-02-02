@@ -1,6 +1,6 @@
-=====================================
-Sale Invoice Grouping Period Scenario
-=====================================
+=========================================
+Purchase Invoice Grouping Period Scenario
+=========================================
 
 Imports::
 
@@ -17,7 +17,7 @@ Imports::
     ...     set_fiscalyear_invoice_sequences
     >>> from trytond.modules.stock.exceptions import MoveFutureWarning
 
-Install sale_invoice_grouping::
+Activate module::
 
     >>> config = activate_modules('purchase_invoice_grouping_period')
 
