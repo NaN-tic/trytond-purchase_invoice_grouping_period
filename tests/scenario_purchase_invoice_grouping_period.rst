@@ -152,6 +152,7 @@ Purchase some products::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 2.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -186,6 +187,7 @@ Now we'll use the same scenario with the daily supplier::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 1.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -213,6 +215,7 @@ Make another purchase::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 2.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -240,6 +243,7 @@ Make another purchase::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 3.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -290,6 +294,7 @@ Now we'll use the same scenario with the monthly supplier::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 1.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -315,9 +320,11 @@ Make another Purchase (monthly)::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 2.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product2
     >>> purchase_line.quantity = 2.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -348,6 +355,7 @@ Make another Purchase (monthly)::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 3.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -388,6 +396,7 @@ Now we'll use the same scenario with the biweekly supplier::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 1.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -414,6 +423,7 @@ Make another purchase (biweekly)::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 2.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -458,6 +468,7 @@ Create a purchase for the next biweekly::
     >>> purchase_line = purchase.lines.new()
     >>> purchase_line.product = product
     >>> purchase_line.quantity = 4.0
+    >>> purchase_line.unit_price = Decimal('5.0000')
     >>> purchase.click('quote')
     >>> purchase.click('confirm')
     >>> purchase.state
@@ -485,4 +496,3 @@ A new invoice is created::
     ...     ])
     >>> len(invoices)
     2
-
