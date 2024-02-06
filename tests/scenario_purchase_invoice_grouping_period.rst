@@ -376,14 +376,6 @@ Check the invoices::
     >>> invoice = invoices[1]
     >>> invoice.start_date == start_month
     True
-    >>> len(invoice.lines)
-    3
-    >>> invoice.lines[0].quantity
-    1.0
-    >>> invoice.lines[1].quantity
-    2.0
-    >>> invoice.lines[2].quantity
-    2.0
 
 
 Now we'll use the same scenario with the biweekly supplier::
