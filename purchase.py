@@ -6,44 +6,8 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
 
-
-class Purchase(metaclass=PoolMeta):
-    __name__ = 'purchase.purchase'
-
-    def _get_grouped_invoice_order(self):
-        res = super()._get_grouped_invoice_order()
-
-        if self.invoice_grouping_method == 'period':
-            return [('invoice_date', 'DESC')]
-        return res
-
-    def _get_grouped_invoice_date(self):
-        date = None
-        if self.invoice_method == 'shipment':
-            for line in self.lines:
-                if line.type != 'line':
-                    continue
-                quantity = (line._get_invoice_line_quantity() - line._get_invoiced_quantity())
-                if quantity:
-                    date = line.invoice_date
-                    break
-        if date is None:
-            date = self.purchase_date
-        return date
-
-    def _get_grouped_invoice_domain(self, invoice):
-        invoice_domain = super()._get_grouped_invoice_domain(invoice)
-        period = self.party.purchase_invoice_grouping_period
-        # invoice_grouping_method is standard, shipment_address... find invoices
-        if self.invoice_grouping_method != None and period:
-            date = self._get_grouped_invoice_date()
-            start, end = self._get_invoice_dates(date,
-                self.party.purchase_invoice_grouping_period)
-            invoice_domain += [
-                ('start_date', '=', start),
-                ('end_date', '=', end),
-                ]
-        return invoice_domain
+class PeriodMixin():
+    __slots__ = ()
 
     @staticmethod
     def _get_invoice_dates(date, period):
@@ -93,6 +57,46 @@ class Purchase(metaclass=PoolMeta):
             start = datetime.date.today()
             interval = relativedelta(day=0)
         return start, start + interval
+
+
+
+class Purchase(PeriodMixin, metaclass=PoolMeta):
+    __name__ = 'purchase.purchase'
+
+    def _get_grouped_invoice_order(self):
+        res = super()._get_grouped_invoice_order()
+
+        if self.invoice_grouping_method == 'period':
+            return [('invoice_date', 'DESC')]
+        return res
+
+    def _get_grouped_invoice_date(self):
+        date = None
+        if self.invoice_method == 'shipment':
+            for line in self.lines:
+                if line.type != 'line':
+                    continue
+                quantity = (line._get_invoice_line_quantity() - line._get_invoiced_quantity())
+                if quantity:
+                    date = line.invoice_date
+                    break
+        if date is None:
+            date = self.delivery_date or self.purchase_date
+        return date
+
+    def _get_grouped_invoice_domain(self, invoice):
+        invoice_domain = super()._get_grouped_invoice_domain(invoice)
+        period = self.party.purchase_invoice_grouping_period
+        # invoice_grouping_method is standard, shipment_address... find invoices
+        if self.invoice_grouping_method != None and period:
+            date = self._get_grouped_invoice_date()
+            start, end = self._get_invoice_dates(date,
+                self.party.purchase_invoice_grouping_period)
+            invoice_domain += [
+                ('start_date', '=', start),
+                ('end_date', '=', end),
+                ]
+        return invoice_domain
 
     def _get_invoice_purchase(self):
         invoice = super()._get_invoice_purchase()
