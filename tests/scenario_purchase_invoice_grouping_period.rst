@@ -204,7 +204,7 @@ Now we'll use the same scenario with the daily supplier::
     >>> shipment.effective_date = today
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 Make another purchase::
 
@@ -232,7 +232,7 @@ Make another purchase::
     >>> shipment.effective_date = today
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 Make another purchase::
 
@@ -260,7 +260,7 @@ Make another purchase::
     >>> shipment.effective_date = today
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 Check the invoices::
 
@@ -309,7 +309,7 @@ Now we'll use the same scenario with the monthly supplier::
     >>> shipment.effective_date = today
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 
 Make another Purchase (monthly)::
@@ -341,7 +341,7 @@ Make another Purchase (monthly)::
     >>> shipment.effective_date = past_week
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
     >>> set_user(purchase_user)
     >>> purchase.reload()
 
@@ -370,7 +370,7 @@ Make another Purchase (monthly)::
     >>> shipment.effective_date = past_month
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 Check the invoices::
 
@@ -411,7 +411,7 @@ Now we'll use the same scenario with the biweekly supplier::
     >>> shipment.effective_date = same_biweekly
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 
 Make another purchase (biweekly)::
@@ -438,7 +438,7 @@ Make another purchase (biweekly)::
     >>> shipment.effective_date = same_biweekly
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 
 Check the invoices::
@@ -483,7 +483,7 @@ Create a purchase for the next biweekly::
     >>> shipment.effective_date = past_biweekly
     >>> shipment.save()
     >>> shipment.click('receive')
-    >>> shipment.click('done')
+    >>> shipment.click('do')
 
 .. [(x.start_date, x.end_date, past_biweekly, same_biweekly, start_month) for x in invoices]
 
