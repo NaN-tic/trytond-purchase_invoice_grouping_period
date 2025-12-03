@@ -98,8 +98,8 @@ class Purchase(PeriodMixin, metaclass=PoolMeta):
                 ]
         return invoice_domain
 
-    def _get_invoice_purchase(self):
-        invoice = super()._get_invoice_purchase()
+    def _get_invoice(self):
+        invoice = super()._get_invoice()
 
         period = self.party.purchase_invoice_grouping_period
         # invoice_grouping_method is standard, shipment_address... find invoices
